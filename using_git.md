@@ -18,16 +18,27 @@ $ git status
 $ git commit -m "Add new disk_usage check."
 ```
 5. Tracking Files
-- Each track file can be in one of three main states: modified, staged or committed.
+Each track file can be in one of three main states: modified, staged or committed.
 ```bash
-git status
+    $ git status
+    On branch linux
+    Your branch is up to date with 'origin/linux'.
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+            using_git.md
+    nothing added to commit but untracked files present (use "git add" to track)
+```
+6. Add file to the stage area
+```bash
+$ git add using_git.md 
+$ git status
 On branch linux
 Your branch is up to date with 'origin/linux'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        using_git.md
-
-nothing added to commit but untracked files present (use "git add" to track)
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   using_git.md
 ```
-6. 
+7. Commit changes
+```bash
+$ git commit -m 'Add using_git.md file'
+ ```
