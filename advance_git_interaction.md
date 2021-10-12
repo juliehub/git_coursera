@@ -86,3 +86,49 @@ index 827f339..c37ef18 100755
 $ git diff --staged
 $ git commit -m 'Add a message when everything is ok'
 ```
+9. Remove a file
+```bash
+$ git rm process.py
+$ git status
+On branch linux
+Your branch is ahead of 'origin/linux' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    process.py
+$ git commit -m 'Delete unneeded processes file'
+[linux 22b46a4] Delete unneeded processes file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 process.py
+```
+10. Rename a file
+```bash
+$ git mv disk_usage.py check_free_space.py
+$ git status
+On branch linux
+Your branch is ahead of 'origin/linux' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    disk_usage.py -> check_free_space.py
+$ git commit -m 'New name for disk_usage.py'
+[linux c5f324a] New name for disk_usage.py
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename disk_usage.py => check_free_space.py (100%)
+```
+11. Create .gitignore file
+```bash
+$ echo .DS_STORE > .gitignore
+$ ls -la
+$ git add .gitignore 
+$ git commit -m 'Add a gitingore file, ignoring .DS_STORE files'
+[linux aa0910f] Add a gitingore file, ignoring .DS_STORE files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+```
+.gitignore files are used to tell the git tool to intentionally ignore some files in a given Git repository. For example, this can be useful for configuration files or metadata files that a user may not want to check into the master branch. Check out more at: https://git-scm.com/docs/gitignore.
+Example: https://gist.github.com/octocat/9257657
+12. Git Cheat Sheet
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
