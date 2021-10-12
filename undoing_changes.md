@@ -21,4 +21,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         output.txt
 ```
+or
+```bash
+$ git restore --staged output.txt
+```
 3. 
