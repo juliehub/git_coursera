@@ -9,7 +9,6 @@ $ git commit -a -m "Call check_reboot from main, exit with 1 on error"
 ```bash
 $ git log -p
 commit d436385f1b3fab0e97585599b08212399ed6f52e
-Author: Julie Nguyen <julie@Julies-Air.lan>
 Date:   Thu Oct 7 21:18:32 2021 +1100
 
     add to linux branch
@@ -37,7 +36,6 @@ $ git show bf0564cb887a2e775d5f9b6b5b16c2117d7c5b14
 ```bash
 $ git log --stat
 commit bf0564cb887a2e775d5f9b6b5b16c2117d7c5b14 (HEAD -> linux)
-Author: Julie Nguyen <julieng0820@gmail.com>
 Date:   Mon Oct 11 19:18:55 2021 +1100
 
     Call check_reboot from main, exit with 1 on error
