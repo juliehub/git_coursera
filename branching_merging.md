@@ -25,5 +25,9 @@ $ git log -2
 3. Delete a branch
 ```bash
 $ git checkout linux
+$ git branch -d even-better-feature
+error: The branch 'even-better-feature' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D even-better-feature'.
 $ git branch -D even-better-feature
 ```
+4. 
