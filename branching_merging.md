@@ -30,4 +30,9 @@ error: The branch 'even-better-feature' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D even-better-feature'.
 $ git branch -D even-better-feature
 ```
-4. 
+4. Merge a branch using fast-forward merge
+```bash
+$ git checkout master
+$ git merge linux
+```
+5. Resolve merge conflicts
