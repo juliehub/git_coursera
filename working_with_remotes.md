@@ -45,3 +45,4 @@ $ git log
 6. The main difference between git fetch and git pull
 is that git fetch fetches remote updates but doesn't merge;
 git pull fetches remote updates and merges.
+7. A squash merge will take the commits from a target branch and combine or squash them into one commit. This commit is then appended to the HEAD of the merge base branch to keep a 'clean history' during a merge.
