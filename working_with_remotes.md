@@ -50,7 +50,11 @@ git pull fetches remote updates and merges.
 ```bash
 $ git push -u origin linux
 ```
-9. Rebasing changes
+9. Instead of using 'git merge' (it will use 3-way merges if master branch has more updates), 
+rebase changes by moving the current branch on top of the linux branch (to keep our history linear).
+(before rebase HEAD->master, after rebase HEAD->linux)
+This makes debugging easier and prevents three-ways merges by transfering
+the completed work from one branch to another.
 ```bash
 $ git checkout linux
 $ git rebase master
@@ -58,11 +62,12 @@ $ git checkout master
 $ git merge linux
 $ git log --graph --oneline
 ```
-10. Remote remote branch
+10. After rebase, remove remote branch
 ```bash
 $ git push --delete origin linux
 ```
-11. Remove local branch
+11. Remove local branch and push changes back to remote repo
 ```bash
 $ git branch -d linux
+$ git push
 ```
