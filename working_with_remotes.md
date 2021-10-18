@@ -51,3 +51,18 @@ git pull fetches remote updates and merges.
 $ git push -u origin linux
 ```
 9. Rebasing changes
+```bash
+$ git checkout linux
+$ git rebase master
+$ git checkout master
+$ git merge linux
+$ git log --graph --oneline
+```
+10. Remote remote branch
+```bash
+$ git push --delete origin linux
+```
+11. Remove local branch
+```bash
+$ git branch -d linux
+```
