@@ -66,3 +66,6 @@ $ git push --delete origin linux
 ```bash
 $ git branch -d linux
 ```
+12. Another way is to do 'fetch, rebase, push' workflow
+to merge our changes with our collaborators' changes while
+keeping history linear.
